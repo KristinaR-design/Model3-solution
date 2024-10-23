@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+body {
+    font-family: "Arima", system-ui;
+    font-size: 16px;
+}
+
+#header-nav {
+    text-align: center;
+    background-color: gray;
+    border: 3px solid black; 
+}
+
+.navbar-brand {
+    font-size: x-large;
+    color: black;
+    text-align: left;
+}
+
+#nav-list {
+    margin-top: 10px;
+}
+ 
+#nav-list a {
+    color: black;
+    text-align: center;
+}
+
+.menu-icon {
+    display: none; 
+    color: black;
+    cursor: pointer;
+    font-size: 24px; /* Добавляем размер шрифта */
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none; /* По умолчанию скрываем меню */
+}
+
+.nav-links.active {
+    display: flex; /* Показываем меню при активном классе */
+    flex-direction: column; /* Вертикальное расположение */
+    position: absolute;
+    background-color: #f9f9f9; /* Цвет фона */
+    width: 100%;
+    top: 50px; /* Расположение под гамбургером */
+    left: 0;
+    text-align: center;
+}
+
+.Menustyle {
+    text-align: center;
+    padding: 30px;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: flex-start; 
+}
+
+.elementcolor{
+    color:#000000;
+}
+
+.menu-item {
+    background-color: grey;
+    border: 1px solid black;
+    position: relative;
+    width: 27%;
+    padding: 15px;
+    text-align: left;
+}
+
+@media (max-width: 991px) {
+    .menu-container {
+        flex-wrap: wrap; 
+    }
+    .menu-item {
+        width: 45%; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; 
+    }
+    .nav-links {
+        display: none; 
+    }
+}
